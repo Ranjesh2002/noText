@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text-to-Speech</title>
+    <style>
+      body {
+        width: 200px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      #speedControl {
+        width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <button id="readTextButton">Read Selected Text</button>
+    <br />
+    <label for="speedControl">Speed:</label>
+    <input
+      type="range"
+      id="speedControl"
+      min="0.5"
+      max="2"
+      step="0.1"
+      value="1"
+    />
+  </body>
+</html>
